@@ -8,10 +8,11 @@ The approximate structure of your project should be something like this:
 
 ```
 minimally_useful_application/
+├── .gitignore
 ├── DEVELOP.md
 ├── LICENSE
-├── Makefile
 ├── README.md
+├── config.ini
 ├── docs
 │   └── Overview.md
 ├── minimally_useful_application
@@ -19,18 +20,22 @@ minimally_useful_application/
 │   ├── core.py
 │   ├── timing
 │   │   ├── __init__.py
+│   │   ├── tests
+│   │   │   ├── __init__.py
+│   │   │   └── test_timing.py
 │   │   └── timing.py
 │   └── utils
 │       ├── __init__.py
 │       ├── cli_utils.py
 │       ├── config_utils.py
-│       └── file_utils.py
+│       ├── file_utils.py
+│       └── tests
+│           ├── __init__.py
+│           ├── test_cli_utils.py
+│           ├── test_config_utils.py
+│           └── test_file_utils.py
 ├── requirements.txt
-├── setup.py
-├── something.ini
-└── tests
-    ├── test_advanced.py
-    └── test_basic.py
+└── setup.py
 ```
 
 The files in the root directory of your project should be as follows:
